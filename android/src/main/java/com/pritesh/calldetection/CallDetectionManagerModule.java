@@ -55,7 +55,7 @@ public class CallDetectionManagerModule
 
     @ReactMethod
     public void stopListener() {
-        if (telephonyManager !== null && callDetectionManager !== null) {
+        if (telephonyManager != null && callDetectionManager != null) {
             telephonyManager.listen(callDetectionPhoneStateListener,
                     PhoneStateListener.LISTEN_NONE);
             telephonyManager = null;
